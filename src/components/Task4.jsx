@@ -21,7 +21,7 @@ const Task4 = () => {
       setSprinkle(false);
     }, 3000);
     setAreButtonsEnabled(true);
-  }, []);
+  }, [toggleButton1, toggleButton2, toggleButton3, toggleButton4]);
 
   return (
     <div>
@@ -41,7 +41,7 @@ const Task4 = () => {
         <button
           disabled={areButtonsEnabled}
           onClick={() => {
-            setToggleButton1((toggleButton1) => !toggleButton1);
+            setToggleButton1((toggleButton1) =>  !toggleButton1);
           }}
         >
           Click me
